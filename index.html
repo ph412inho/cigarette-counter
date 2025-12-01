@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Track your daily cigarette consumption with our simple smoke counter app">
+    <title>Smoke Counter - Track Your Cigarettes</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Hero Section with proper <img> for SEO -->
+        <section class="hero-section">
+            <img 
+                src="cigarette.jpg" 
+                alt="Cigarette smoke counter - health tracking application"
+                class="hero-img"
+                width="1920"
+                height="600"
+                loading="eager">
+            <div class="hero-overlay">
+                <h1 class="hero-title">Smoke Counter</h1>
+            </div>
+        </section>
+
+        <!-- Main Content -->
+        <main class="content">
+            <h2 class="label">Smoked Cigarettes:</h2>
+            <p class="count" id="smoke-el" aria-live="polite">0</p>
+            
+            <div class="button-group">
+                <button 
+                    id="smoke-btn" 
+                    onclick="smoke()"
+                    aria-label="Add one cigarette to counter">
+                    Smoke
+                </button>
+                <button 
+                    id="save-btn" 
+                    onclick="save()"
+                    aria-label="Save current count and reset">
+                    Save
+                </button>
+            </div>
+
+            <section class="history">
+                <p id="save-el" aria-live="polite">Previous smokes: </p>
+            </section>
+        </main>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
